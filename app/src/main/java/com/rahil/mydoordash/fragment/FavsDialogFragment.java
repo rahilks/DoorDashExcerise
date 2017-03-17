@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -52,10 +51,11 @@ public class FavsDialogFragment extends DialogFragment {
         View view = layoutInflater.inflate(R.layout.fragment_favs_dialog, null);
         mRecyclerView = (RecyclerView) view.findViewById(R.id.favs_recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity().getBaseContext()));
-        Log.e("Favs", "size" + restaurantList.size());
+
         RestaurantListAdapter restaurantListAdapter = new RestaurantListAdapter(restaurantList);
         restaurantListAdapter.disableFavButton();
         mRecyclerView.setAdapter(restaurantListAdapter);
+
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
         dialogBuilder.setTitle(R.string.favs_title);
         dialogBuilder.setView(view);

@@ -9,7 +9,6 @@ import android.os.Bundle;
 
 import com.rahil.mydoordash.R;
 
-
 public class ProgressDialogFragment extends DialogFragment {
 
     private static final String EXTRA_MESSAGE = "EXTRA_MESSAGE";
