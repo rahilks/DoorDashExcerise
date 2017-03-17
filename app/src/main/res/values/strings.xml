@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyDoorDash</string>
+    <string name="rest_near_loc">Restaurants Near Location</string>
+    <string name="reading_data">Reading Door Dash data...</string>
+    <string name="stop">Stop</string>
+    <string name="loading_rest_list">Loading restaurant list...</string>
+    <string name="action_show_favorite">View Favorites</string>
+    <string name="action_show_all">Show All</string>
+    <string name="close">Close</string>
+    <string name="favs_title">Your Favorites</string>
+    <string name="fav_error">You have not marked any favorite restaurants!</string>
+    <string name="change_location">Change Location</string>
+    <string name="location_play_error">Google Play Exception, cannot change location</string>
+    <string name="location_play_services_install_error">Google Play Services not available, cannot change location</string>
+</resources>
